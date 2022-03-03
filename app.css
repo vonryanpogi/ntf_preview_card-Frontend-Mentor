@@ -55,6 +55,8 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    min-width: 375px;
+    max-width: 1440px;
 }
 .u-centered{
     background-color: hsl(216, 50%, 16%);
@@ -63,6 +65,7 @@ body{
     max-width: 300px;
     flex-direction:column;
     border-radius: 5%;
+    box-shadow: 0px 15px 10px 10px hsl(217, 56%, 8%);
 }
 
 div .img-card{
@@ -71,15 +74,15 @@ div .img-card{
     justify-content: center;
     align-items: center;
 }
-div .img-card img{
+.card_image img{
     width: 90%;
     border-radius: 5%;
     margin: 5%;
 }
-div .img-card img{
+.card_image img{
     position: relative;
 }
-div .img-card div{
+div .color_eye{
     position:absolute;
     background-color:hsl(178, 100%, 50%, 60%) ;
     width: 270px;
@@ -89,16 +92,15 @@ div .img-card div{
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
-div .img-card div:hover{
+div .color_eye:hover{
     opacity: 1;
     cursor: pointer;
-
 }
-div .img-card div img{
+div .color_eye img{
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-90%, -90%);
+    transform: translate(-50%, -50%);
     width: 2em;
 }
 
@@ -135,7 +137,7 @@ p svg{
 .ETH{
     display: flex;
 }
-.ETH p{
+.ETH div p{
     margin: auto 10px;
     color: hsl(178, 100%, 50%);
     font-weight: 400;
@@ -144,7 +146,7 @@ p svg{
 .Days{
     display: flex;
 }
-.Days p{
+.Days div p{
     margin: auto 10px;
     color: hsl(215, 51%, 70%);
     font-weight: 300;
